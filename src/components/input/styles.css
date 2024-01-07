@@ -1,0 +1,28 @@
+.InputComponentMain{
+    display: flex;
+}
+.InputComponentMain input {
+    height: 30px;
+    width: 200px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 15px;
+    border: solid 1px #00000020;
+}
+.InputComponentMain label{
+    position: absolute;
+    color: black;
+    margin-left: 10px;
+    pointer-events: none;
+    transition: ease-in-out 0.2s;
+}
+.InputComponentMain input:focus ~ label {
+    margin-top: -20px;
+    font-size: 15px;
+    animation: ease-in-out;
+}
+.InputComponentMain input:valid ~ label {
+    margin-top: -20px;
+    font-size: 15px;
+    animation: ease-in-out;
+}
